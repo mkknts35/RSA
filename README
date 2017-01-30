@@ -1,0 +1,20 @@
+csci485/Lab8 RSA encryption
+
+Public key (121, 10677301) or (e, n)
+Private key (705481, 10677301) or (d, n)
+
+The above key pair is a valid set and will work for testing of the program.  
+(Feel free to calculate your own key value pairs to experiment with)
+
+The program works in two ways; first it will use the RSA scheme to encrypt 
+simple text files, and second it will take the output of the first and reverse 
+the encryption.
+
+    1) make encode
+       ./encode <filename> e n
+    2) make decode
+       ./decode <filename> d n
+
+*Note: This is a simple program written to test and understand the principals 
+       behind RSA encryption.  It is not intended to make important messages
+       secure.

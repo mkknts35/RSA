@@ -35,6 +35,7 @@ int main(int argc, char *argv[]){
     int n = stoi(s_n);
     stringstream buffer;
     buffer << fin.rdbuf();
+    fin.close();
 #if ENCRYPT
     string message = encrypt(buffer.str(), key, n);
     string extension = ".encoded";
@@ -50,6 +51,7 @@ int main(int argc, char *argv[]){
         return 0;
     }
     fout << message;
+    fout.close();
 
     return 0;
 }
