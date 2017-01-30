@@ -1,0 +1,1 @@
+#define ENCRYPT 1
